@@ -15,8 +15,11 @@
         <h2 style="color: rgb(229, 212, 212);font-family: Georgia, 'Times New Roman', Times, serif;text-align: center;margin-top: 80px;">Please wait for 10 seconds only, your page is loading...!</h2>
     </div>
     <nav class="nav">
+        <div class="nav-toggle" onclick="toggleNav()">☰</div> 
         <div class="logo"><img src="images/cizy1.png.png" alt="" class="logo"></div>
         <div class="nav-right">
+           
+
             <div>
                 <ul class="ul" type="none">
                     <li>Home</li>
@@ -33,7 +36,7 @@
             </div>
         </div>
     </nav>
-    <section>
+    <section1>
         <div class="product">
             <div class="product-left">
                 <div>
@@ -82,8 +85,8 @@
 
             </div>
         </div>
-    </section>
-    <section>
+    </section1>
+    <section2>
         <div class="services1">
             <div class="services1-left"><img src="images/19135-Buildings.jpg" alt="" class="services1-image"></div>
             <div class="services1-right">
@@ -147,8 +150,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section>
+    </section2>
+    <section3>
         <div class="blackboard">
             <div class="PeopleSay">
                 <h5>Testimonials</h5><br>
@@ -182,8 +185,8 @@
                 <i class="fa-thin fa-circle-dot"></i>
             </div>
         </div>
-    </section>
-    <section>
+    </section3>
+    <section4>
         <div class="partners">
             <h1 style="text-align: center;font-size: 45px;padding: 30px 0;">OUR PARTNERS</h1>
             <div style="  margin: 30px 280px;">
@@ -225,14 +228,14 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section>
+    </section4>
+    <section5>
         <div class="subscribe">
             <div class="subscribe-left"></div>
             <div class="subscribe-middle"></div>
             <div class="subscribe-right"></div>
         </div>
-    </section>
+    </section5>
 
 
     <footer>
@@ -265,7 +268,7 @@
                     </div>
                 </div>
                 <div class="footer-middle">
-                    <h3>Navigation</h3>
+                    <h3 style="padding-bottom: 30px;">Navigation</h3>
                     <ul type="none">
                         <li>Home</li>
                         <li>Pages</li>
@@ -298,7 +301,14 @@
     <script>
         window.setTimeout(function preloader(){
   document.getElementById('loader').style="display:none"
-},10000)
+},7000)
+
+function toggleNav() {
+    const navItems = document.querySelector('.nav-right');
+    navItems.classList.toggle('active');
+}
+
+
     </script>
 </body>
 
